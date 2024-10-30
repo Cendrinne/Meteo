@@ -70,7 +70,7 @@ main {
   display: flex;
 }
 
-.weather-app-temperature {
+.weather-app-value {
 font-size: 88px;
 font-weight: bold;
 }
