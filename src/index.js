@@ -10,14 +10,34 @@ function refreshWeather(response) {
 
 
   cityElement.innerHTML = response.data.city;
+  timeElement.innerHTML = formatDate(date);
   descriptionElement.innerHTML = response.data.condition.description;
   temperatureElement.innerHTML = Math.round(temperature);
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windSpeedElement.innerHTML = `${response.data.wind.speed}km/h`;
-  timeElement.innerHTML = `${date.getDay()} ${date.getHours()}:${date.getMinutes()}`;
+  
 
   console.log(response.data);
 }
+
+function formatDate(date) {
+
+  let minutes = date.getMinutes();
+  let hours = date.getHours();
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+    let day = days[date.getDay()];
+
+    return `${day} ${hours}:${minutes}`;
+}
+
 
 function searchCity(city) {
   let apiKey = "73f90ofbe4423241037fca0b58a62fdt";
