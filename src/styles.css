@@ -70,6 +70,10 @@ main {
   display: flex;
 }
 
+.weather-app-temperature {
+font-size: 88px;
+font-weight: bold;
+}
 
 footer {
   border-top: 1px solid #f9f7fe;
