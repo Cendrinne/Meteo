@@ -1,5 +1,5 @@
 function refreshWeather(response) {
-  console.log(response.data.current.temperature);
+  console.log(response.data.temperature.current);
 }
 
 
