@@ -51,7 +51,11 @@ function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
 
+ // testing to get current time
+  now.toLocaleTimeString();
+
   searchCity(searchInput.value);
+
 }
 
 function formatDay(timestamp) {
