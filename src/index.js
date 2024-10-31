@@ -56,8 +56,6 @@ function handleSearchSubmit(event) {
 
 
 function displayForecast() {
- 
-
   let days = ["Thu", "Fri", "Sat", "Sun", "Mon"];
   let forecastHtml = "";
 
@@ -77,13 +75,9 @@ function displayForecast() {
          </div>
         `;
   });
+  let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
-
 }
-
- let forecastElement = document.querySelector("#forecast");
- forecastElement.innerHTML = forecastHtml;
-
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
