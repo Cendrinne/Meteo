@@ -61,7 +61,7 @@ searchFormElement.addEventListener("submit", handleSearchSubmit);
 searchCity("Paris");
 
 
-let forecast = document.querySelector("forcast");
+let forecast = document.querySelector("forecast");
 
 forecast.innerHTML = `
           <div class="weather-forecast-day">
