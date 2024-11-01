@@ -63,7 +63,9 @@ main {
 }
 
 .updated {
-  font-size: 10px;
+    font-size: 10px;
+ 	  position: relative; 
+	  top: -4px; 
 }
 
 .weather-app-details strong {
